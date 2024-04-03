@@ -1,7 +1,7 @@
 package ma.achraf.hopital;
 
 import ma.achraf.hopital.Repositories.ConsultationRepository;
-import ma.achraf.hopital.Repositories.MedcinRepository;
+import ma.achraf.hopital.Repositories.MedecinRepository;
 import ma.achraf.hopital.Repositories.PatientRepository;
 import ma.achraf.hopital.Repositories.RendezVousRepository;
 import ma.achraf.hopital.entities.*;
@@ -24,7 +24,7 @@ public class HopitalApplication   {
     CommandLineRunner start (
 
             IHospitalService hospitalService, PatientRepository patientRepository,
-            MedcinRepository medcinRepository,
+            MedecinRepository medecinRepository,
             RendezVousRepository rendezVousRepository , // enregistre le rendez vous j ai besoin de injecte le
             ConsultationRepository  consultationRepository // injecte l interface pour enregistre la consltation
 
@@ -49,13 +49,13 @@ public class HopitalApplication   {
                       medecin.setNom(name);
                       medecin.setEmail(name+"@gmail.com");
                       medecin.setSpecialite(Math.random()>0.5?"Cardio":"Dentitste");
-                      medcinRepository.save(medecin);
+                      medecinRepository.save(medecin);
                   });
 
           Patient patient = patientRepository. findById(1L).orElse(null); // je veux chercher un patient s il existe il va le retourne sinon il va retourne null
           Patient patient1 = patientRepository. findByNom("shrayyfa");
 
-          Medecin medecin = medcinRepository.findByNom("ashraf");
+          Medecin medecin = medecinRepository.findByNom("ashraf");
 
           RendezVous rendezVous = new RendezVous(); // suis encrire un RDV qui concerne  un patient qui existe deja et un medecin qui  existe deja
           rendezVous.setDate(new Date());

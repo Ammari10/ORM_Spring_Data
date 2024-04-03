@@ -9,7 +9,7 @@ import ma.achraf.hopital.entities.RendezVous;
 
 public interface IHospitalService {
   Patient savePatient (Patient patient) ;// vous avez besoin une methode qui permet ajt un patient
-  Medecin saveMedecin (Medecin medcin) ;
+  Medecin saveMedecin (Medecin medecin) ;
   RendezVous saveRendezVous (RendezVous rendezVous);
   Consultation saveConsultation (Consultation consultation);
 }

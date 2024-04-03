@@ -17,10 +17,7 @@ public class RendezVous {
     @Enumerated (EnumType.STRING)
     private  StatusRDV  Status;
     @ManyToOne
-
-
 @JsonProperty (access = JsonProperty.Access.WRITE_ONLY)
-
     private  Patient patient; // rendez vous concerne un patient
     @ManyToOne
     private   Medecin medecin ; // rendez vous concern  Medcein
