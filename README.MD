@@ -9,13 +9,10 @@
 • En cas de besoin, vous avez la possibilité d’ajouter d’autres méthodes en les déclarant à l’intérieur de l’interface JPARepository, sans avoir besoin de les implémenter. Spring Data le fera à votre place</p>
 <img src="Captures/img.png">
 
+<h4> L'ensemble des Entités JPA : </h4>
 
 
-
-<h5> L'ensemble des Entités JPA : </h5>
-
-
-<h8> L'Entité Patient :</h8>
+<h8> L'Entité Patient </h8>
 <img src="Captures/P.png">
 
 <h8> L'Entité Medecin:</h8>
